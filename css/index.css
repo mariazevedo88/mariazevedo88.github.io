@@ -15,6 +15,7 @@ SETTINGS
 @-ms-viewport       { width: device-width; }
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
+
 /*******************************************
 BODY
 *******************************************/
@@ -25,6 +26,7 @@ body{
   color: #363636;
   background: #ededed;
 }
+
 /*******************************************
 CONTAINER
 *******************************************/
@@ -33,73 +35,110 @@ CONTAINER
   margin-bottom: 15px;
   background: #fff;
 }
+
 /*******************************************
 PHOTO (AVATAR)
 *******************************************/
 #photo-header{
-  margin-top: -75px;
+  margin-top: 10px;
 }
+
 #photo{
   width: 130px;
-  height: 160px;
-  border-radius: 50%;
-  overflow: hidden;
-  padding: 5px;
-  background: #ededed;
+  height: 180px;
+  margin-top: 15px;
+  margin-left: -15px;
   display: inline-block;
+  overflow: hidden;
 }
+
 #photo img{
-  width: 120px;
-  height: 150px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
+
 #text-header h1{
   margin: 0;
+  margin-left: 15px;
   padding: 0;
   font-size: 2.4em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -1px;
 }
+
+#text-header h2{
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  font-size: 2.0em;
+  font-weight: 620;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
 #text-header h1::first-line{
   font-size: 1.5em;
   letter-spacing: -4px;
   font-weight: 800;
   line-height: 1.5em;
 }
+
+#text-header h2::first-line{
+  font-size: 1.5em;
+  letter-spacing: -4px;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+
 #text-header h1 span{
   color: #327fc7;
 }
+
 #text-header h1 sup{
   opacity: 0.5;
 }
-#text-header:after{
+
+#text-header h2 sup{
+  opacity: 0.3;
+}
+
+#text-line{
   width: 100%;
   height: 3px;
   background: url(../images/line.png);
-  margin-top: 15px;
+  margin-top: 10px;
   content: '';
   display: block;
 }
+
+.text-header-margin{
+  margin-left: 25px;
+}
+
 /*******************************************
 DEFAULT BOX
 *******************************************/
 .box{
   margin-bottom: 15px;
 }
+
 .box h2{
   color: #327fc7;
   font-size: 1.8em;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .box h2:before{
   margin-right: 5px;
 }
+
 .box p{
   font-size: 1.3em;
   line-height: 1.5em;
 }
+
 /*******************************************
 EDUCATION
 *******************************************/
@@ -109,11 +148,12 @@ EDUCATION
   padding: 1em 0;
   list-style: none;
 }
+
 #education:before {
   width: 5px;
   height: 100%;
   position: absolute;
-  left: 25px;
+  left: 38px;
   top: 0;
   content: ' ';
   display: block;
@@ -126,20 +166,24 @@ EDUCATION
   background: linear-gradient(to bottom,  #ffffff 0%,#327fc7 7%,#327fc7 89%,#ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
+
 #education li{
   width: 100%;
   z-index: 2;
   position: relative;
   float: left;
 }
+
 #education .year{
-  width: 10%;
+  width: 15%;
   background: #fff;
-  padding: 10px;
+  padding: 0px;
+  margin-top: 10px;
   font-size: 1.5em;
   font-weight: 700;
   display: inline-block;
 }
+
 #education .description{
   width: 80%;
   display: inline-block;
@@ -149,6 +193,7 @@ EDUCATION
   padding: 10px 10px 0 10px;
   border-bottom: 1px solid #ddd;
 }
+
 #education .description:after {
   content: '';
   position: absolute;
@@ -162,17 +207,20 @@ EDUCATION
   border-width: 8px;
   pointer-events: none;
 }
+
 #education .description h3{
   font-size: 1.6em;
   margin: 0;
   padding: 0;
   font-weight: 700;
 }
+
 #education .description p{
   font-size: 1.3em;
   margin-top: 5px;
   padding: 0;
 }
+
 /*******************************************
 EXPERIENCES
 *******************************************/
@@ -195,6 +243,7 @@ EXPERIENCES
   font-size: 1.2em;
   line-height: 1.5em;
 }
+
 /*******************************************
 CONTACT
 *******************************************/
@@ -230,6 +279,7 @@ CONTACT
   font-size: 1.2em;
   opacity: 0.7;
 }
+
 /*******************************************
 SKILLS
 *******************************************/
@@ -290,26 +340,87 @@ SKILLS
 .legend-right{
   text-align: right;
 }
+
 /*******************************************
 MEDIA
 *******************************************/
 @media (min-width: 500px) {
   #education .description{
-    width: 85%;
+    width: 80%;
+  }
+
+  #photo{
+    width: 120px;
+    height: 170px;
+    margin-top: 15px;
+    margin-left: -15px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  #photo img{
+    width: 80%;
+    height: 80%;
   }
 }
 @media (min-width: 768px) {
   #education .description{
-    width: 85%;
+    width: 80%;
+  }
+
+  #photo{
+    width: 120px;
+    height: 170px;
+    margin-top: 15px;
+    margin-left: -15px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  #photo img{
+    width: 80%;
+    height: 80%;
   }
 }
 @media (min-width: 992px) {
   #education .description{
-    width: 87%;
+    width: 82%;
+  }
+
+  #photo{
+    width: 122px;
+    height: 172px;
+    margin-top: 15px;
+    margin-left: -15px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  #photo img{
+    width: 92%;
+    height: 92%;
   }
 }
 @media (min-width: 1200px) {
   #education .description{
-    width: 90%;
+    width: 85%;
   }
+
+  #photo{
+    width: 125px;
+    height: 175px;
+    margin-top: 15px;
+    margin-left: -15px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  #photo img{
+    width: 95%;
+    height: 95%;
+  }
+}
+
+.cursor-pointer{
+  cursor: pointer
 }

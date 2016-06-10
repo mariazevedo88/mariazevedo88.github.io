@@ -11,14 +11,25 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <div id="photo-header" class="text-center">
+          <div id="photo-header">
             <!-- PHOTO (AVATAR) -->
-            <div id="photo">
-              <img src="images/avatar.jpg" alt="avatar">
+            <div class="col-xs-1">
+               <div id="photo">
+                  <img src="images/avatar.jpg" alt="avatar">
+               </div>
             </div>
-            <div id="text-header">
-              <h1>Hello,<br> my name is <span>Mariana Azevedo</span> and this is my resume/cv</h1>
+           
+            <div class="col-xs-11">
+              <div id="text-header" class="col-xs-12">
+                <h1><span class="text-header-margin">Mariana Azevedo</span></h1>
+                <h2><span class="fa fa-briefcase fa-fw"></span><span>Developer/Researcher</span></h2>
+                <h2><span class="fa fa-map-marker fa-fw"></span><span>Brazil, MG, Lavras</span></h2>
+                <h2><span class="text-header-margin">This is my Resume/CV</span></h2>
+              </div>
             </div>
+
+            <div id="text-line" class="col-xs-12"></div>
+            
           </div>
         </div>
       </div>
@@ -36,18 +47,20 @@
             <h2>Education</h2>
             <ul id="education" class="clearfix">
               <li>
-                <div class="year pull-left">2007-2011</div>
+                <div class="year pull-left">2007 - 2011</div>
                 <div class="description pull-right">
                   <h3>Bachelor in Information Systems (BSc)</h3>
                   <p>Federal University of Lavras - Universidade Federal de Lavras (UFLA)</p>
+                  <p><b>Final work title: </b> AGILE UBPM FOR SCRUM: Modelo de Aprimoramento do Gerenciamento e Desenvolvimento Ágil Baseado na Percepção de Valor do Usuário. 2011. 144p.</p>
                 </div>
               </li>
               <li>
-                <div class="year pull-left">2013-2015</div>
+                <div class="year pull-left">2013 - 2015</div>
                 <div class="description pull-right">
                   <h3>Master in Computer Science (MSc)</h3>
-                  <p>Federal University of Lavras - Universidade Federal de Lavras (UFLA).</p>
-                  <p><b>Field: </b> Software Engineering.</p>
+                  <p>Federal University of Lavras - Universidade Federal de Lavras (UFLA)</p>
+                  <p><b>Field: </b> Software Engineering</p>
+                  <p><b>Dissertation title: </b> A quantitative study for the characterization of internal quality of open- source object-oriented software systems. 2015. 194p.</p>
                 </div>
               </li>
             </ul>
@@ -83,17 +96,18 @@
             <h2>Contact</h2>
             <div class="contact-item">
               <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-              <div class="title only pull-right">mariana@bsi.ufla.br</div>
+              <div class="title pull-right">Email</div>
+              <div class="description pull-right cursor-pointer">mariana@bsi.ufla.br</div>
             </div>
             <div class="contact-item">
               <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
               <div class="title pull-right">LinkedIn</div>
-              <div class="description pull-right">https://www.linkedin.com/in/mariana-de-azevedo-santos-1a126321</div>
+              <div class="description pull-right cursor-pointer"><a>https://www.linkedin.com/in/mariana-de-azevedo-santos-1a126321</a></div>
             </div>
              <div class="contact-item">
               <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
               <div class="title pull-right">Github</div>
-              <div class="description pull-right">https://github.com/mariazevedo88</div>
+              <div class="description pull-right cursor-pointer"><a>https://github.com/mariazevedo88</a></div>
             </div>
           </div>
           <!-- SKILLS -->
