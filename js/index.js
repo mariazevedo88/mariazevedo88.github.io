@@ -47,6 +47,10 @@ Since: 06/08/2016
 		$scope.sendMail = function(){
     		$window.location.href = "mailto:mariana@bsi.ufla.br";
     	};
+
+    	$scope.downloadPaper = function(link){
+    		$window.location.href = link;
+    	}
    });
   
 })();
