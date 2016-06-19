@@ -17,6 +17,13 @@ SETTINGS
 @viewport           { width: device-width; }
 
 /*******************************************
+GENERIC
+*******************************************/
+.cursor-pointer{
+  cursor: pointer
+}
+
+/*******************************************
 BODY
 *******************************************/
 body{
@@ -360,9 +367,48 @@ SKILLS
   text-align: right;
 }
 
-.cursor-pointer{
-  cursor: pointer
+/*******************************************
+PAPER
+*******************************************/
+.paper-item{
+  width: 100%;
+  float: left;
 }
+
+.paper-item .icon{
+  padding: 10px;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  opacity: 0.2;
+}
+
+.paper-item:last-child .icon{
+  border-bottom: none;
+}
+
+.paper-item .fa{
+  font-size: 2em;
+}
+
+.paper-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-size: 1.5em;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.paper-item .title.only{
+  margin-top: 10px;
+}
+
+.paper-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-size: 1.2em;
+  opacity: 0.7;
+}
+
 
 /*******************************************
 MEDIA
