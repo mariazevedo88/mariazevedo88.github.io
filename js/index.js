@@ -8,6 +8,42 @@ Since: 06/08/2016
 
   app.controller('PageCtrl', function ($scope, $window) {
 
+  		$scope.papersPublished = [{'name': 'The impact of Scrum in software development: a case study using SWOT analysis',
+  		 'year': '2010',
+  		 'size': '153,20 KB',
+  		 'link': 'http://www.dcc.ufla.br/infocomp/index.php/INFOCOMP/article/view/386/368'
+  		},
+  		{'name': 'Challenges of Teams Management: Using Agile Methods to Solve the Common Problems',
+  		 'year': '2011',
+  		 'size': '74 KB',
+  		 'link': 'http://migre.me/u987R'
+  		},
+  		{'name': 'Agile Practices: An Assessment of Perception of Value of Professionals on the Quality Criteria in Performance of Projects',
+  		 'year': '2011',
+  		 'size': '323 KB',
+  		 'link': 'http://dx.doi.org/10.4236/jsea.2011.412082'
+  		},
+  		{'name': 'Agile practices to accelerate the delivery of software: a quantitative study with software professionals',
+  		 'year': '2012',
+  		 'size': '574 KB',
+  		 'link': 'http://dx.doi.org/10.1109/HICSS.2013.75'
+  		},
+  		{'name': 'Improving the management of cost and scope in software projects using agile practices',
+  		 'year': '2013',
+  		 'size': '182 KB',
+  		 'link': 'http://www.airccse.org/journal/jcsit/5113ijcsit04.pdf'
+  		},
+  		{'name': 'Um Modelo Conceitual para Caracterização da Qualidade Interna de Sistemas de Software Open-Source Orientados a Objeto',
+  		 'year': '2014',
+  		 'size': '6,03 MB',
+  		 'link': 'http://www.ic.ufal.br/evento/cbsoft2014/anais/wtdsoft_v1_p.pdf'
+  		},
+  		{'name': 'Similar Characteristics in Internal Software Attributes for  Object-Oriented Open-Source Software Projects',
+  		 'year': '2014',
+  		 'size': '1 MB',
+  		 'link': 'http://migre.me/u986v'
+  		}];
+
 	  	$scope.init = function(){
 	  		$scope.callback();
 	  	};
