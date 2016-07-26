@@ -50,14 +50,14 @@ PHOTO (AVATAR)
   margin-top: 10px;
 }
 
-#photo{
+ #photo{
   width: 130px;
-  height: 180px;
+  height: 180px; 
   margin-top: 15px;
-  margin-left: -15px;
+  margin-left: -15px; 
   display: inline-block;
   overflow: hidden;
-}
+} 
 
 #photo img{
   width: 100%;
@@ -66,7 +66,7 @@ PHOTO (AVATAR)
 
 #text-header h1{
   margin: 0;
-  margin-left: 15px;
+  margin-left: 15px; 
   padding: 0;
   font-size: 2.4em;
   font-weight: 700;
@@ -413,7 +413,7 @@ PAPER
 /*******************************************
 MEDIA
 *******************************************/
-@media (min-width: 500px) {
+@media (min-width: 275px) {
   #education .description{
     width: 80%;
   }
@@ -424,17 +424,226 @@ MEDIA
 
   #photo{
     width: 120px;
-    height: 170px;
+    height: 170px; 
     margin-top: 15px;
-    margin-left: -15px;
+    margin-left: -15px; 
     display: inline-block;
     overflow: hidden;
-  }
+  } 
 
   #photo img{
     width: 80%;
     height: 80%;
   }
+
+  #text-header h1{
+    margin: 0;
+    padding: 0;
+    margin-left: -27px; 
+    font-size: 1.6em;
+    font-weight: 620;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  #text-header h2{
+    margin: 0;
+    padding: 0;
+    margin-left: -27px; 
+    font-size: 1.2em;
+    font-weight: 540;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  .text-header-margin{
+    margin: 0;
+  }
+
+}
+
+@media (min-width: 360px) {
+  #education .description{
+    width: 80%;
+  }
+
+  #education .year{
+    width: 20%;
+  }
+
+  #photo{
+    width: 120px;
+    height: 170px; 
+    margin-top: 15px;
+    margin-left: -15px; 
+    display: inline-block;
+    overflow: hidden;
+  } 
+
+  #photo img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #text-header h1{
+    margin: 0;
+    padding: 0;
+    margin-left: -27px; 
+    font-size: 2.0em;
+    font-weight: 680;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  #text-header h2{
+    margin: 0;
+    padding: 0;
+    margin-left: -27px; 
+    font-size: 1.6em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  .text-header-margin{
+    margin: 0;
+  }
+
+}
+
+@media (min-width: 438px) {
+  #education .description{
+    width: 80%;
+  }
+
+  #education .year{
+    width: 20%;
+  }
+
+  #photo{
+    width: 120px;
+    height: 170px; 
+    margin-top: 15px;
+    margin-left: -15px; 
+    display: inline-block;
+    overflow: hidden;
+  } 
+
+  #photo img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #text-header h1{
+    margin: 0;
+    margin-left: 35px; 
+    padding: 0;
+    font-size: 2.0em;
+    font-weight: 680;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  #text-header h2{
+    margin: 0;
+    margin-left: 35px;
+    padding: 0;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+}
+
+@media (min-width: 480px) {
+  #education .description{
+    width: 80%;
+  }
+
+  #education .year{
+    width: 20%;
+  }
+
+  #photo{
+    width: 120px;
+    height: 170px; 
+    margin-top: 15px;
+    margin-left: -15px; 
+    display: inline-block;
+    overflow: hidden;
+  } 
+
+  #photo img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #text-header h1{
+    margin: 0;
+    margin-left: 35px; 
+    padding: 0;
+    font-size: 2.0em;
+    font-weight: 680;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  #text-header h2{
+    margin: 0;
+    margin-left: 35px;
+    padding: 0;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+}
+
+@media (min-width: 600px) {
+  #education .description{
+    width: 80%;
+  }
+
+  #education .year{
+    width: 20%;
+  }
+
+  #photo{
+    width: 120px;
+    height: 170px; 
+    margin-top: 15px;
+    margin-left: -15px; 
+    display: inline-block;
+    overflow: hidden;
+  } 
+
+  #photo img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #text-header h1{
+    margin: 0;
+    margin-left: 22px; 
+    padding: 0;
+    font-size: 2.2em;
+    font-weight: 680;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  #text-header h2{
+    margin: 0;
+    margin-left: 22px;
+    padding: 0;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -448,16 +657,36 @@ MEDIA
 
   #photo{
     width: 120px;
-    height: 170px;
+    height: 170px; 
     margin-top: 15px;
-    margin-left: -15px;
+    margin-left: -15px; 
     display: inline-block;
     overflow: hidden;
-  }
+  } 
 
   #photo img{
     width: 80%;
     height: 80%;
+  }
+
+  #text-header h1{
+    margin: 0;
+    margin-left: 15px; 
+    padding: 0;
+    font-size: 2.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  #text-header h2{
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+    font-size: 2.0em;
+    font-weight: 620;
+    text-transform: uppercase;
+    letter-spacing: -1px;
   }
 }
 
@@ -472,16 +701,36 @@ MEDIA
 
   #photo{
     width: 122px;
-    height: 172px;
+    height: 172px; 
     margin-top: 15px;
-    margin-left: -15px;
+    margin-left: -15px; 
     display: inline-block;
     overflow: hidden;
-  }
+  } 
 
   #photo img{
     width: 92%;
     height: 92%;
+  }
+
+  #text-header h1{
+    margin: 0;
+    margin-left: 15px; 
+    padding: 0;
+    font-size: 2.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  #text-header h2{
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+    font-size: 2.0em;
+    font-weight: 620;
+    text-transform: uppercase;
+    letter-spacing: -1px;
   }
 }
 
@@ -496,16 +745,36 @@ MEDIA
 
   #photo{
     width: 125px;
-    height: 175px;
+    height: 175px; 
     margin-top: 15px;
-    margin-left: -15px;
+    margin-left: -15px; 
     display: inline-block;
     overflow: hidden;
-  }
+  } 
 
   #photo img{
     width: 95%;
     height: 95%;
+  }
+
+  #text-header h1{
+    margin: 0;
+    margin-left: 15px; 
+    padding: 0;
+    font-size: 2.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  #text-header h2{
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+    font-size: 2.0em;
+    font-weight: 620;
+    text-transform: uppercase;
+    letter-spacing: -1px;
   }
 }
 
