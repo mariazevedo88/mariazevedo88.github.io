@@ -1,56 +1,58 @@
-/*******************************************
-Author: Mariana Azevedo
-Since: 06/08/2016
-*******************************************/
-/*******************************************
-FONTS
-*******************************************/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-/*******************************************
-SETTINGS
-*******************************************/
-@charset "utf-8";
-@-webkit-viewport   { width: device-width; }
-@-moz-viewport      { width: device-width; }
-@-ms-viewport       { width: device-width; }
-@-o-viewport        { width: device-width; }
-@viewport           { width: device-width; }
+/*   
+ * Template Name: Orbit - Responsive Resume/CV Template for Developers
+ * Version: 1.0
+ * Author: Xiaoying Riley
+ * Twitter: @3rdwave_themes
+ * License: Creative Commons Attribution 3.0 License
+ * Website: http://themes.3rdwavemedia.com/
+*/
+/*
+* CSS updated
+* Author: Mariana Azevedo
+* Since: 28/05/2017
+*/
+/* styles.css */
+/* ======= Base ======= */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  background: #f5f5f5;
+  font-size: 14px;
+  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+a {
+  color: #2e4049;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #10171a;
+}
+a:focus {
+  text-decoration: none;
+}
+p {
+  line-height: 1.5;
+}
 
-/*******************************************
-GENERIC
-*******************************************/
+/* General section - since 28/05/2017 */
 .cursor-pointer{
   cursor: pointer
 }
-
-/*******************************************
-BODY
-*******************************************/
-body{
-  font-family: 'Open Sans', Arial, Tahoma;
-  font-weight: 400;
-  font-size: 1em;
-  color: #363636;
-  background: #ededed;
-}
-
-/*******************************************
-CONTAINER
-*******************************************/
-.container{
-  margin-top: 80px;
-  margin-bottom: 15px;
-  background: #fff;
-}
-
-/*******************************************
-PHOTO (AVATAR)
-*******************************************/
-#photo-header{
-  margin-top: 10px;
-}
-
- #photo{
+#photo{
   width: 130px;
   height: 180px; 
   margin-top: 15px;
@@ -58,266 +60,245 @@ PHOTO (AVATAR)
   display: inline-block;
   overflow: hidden;
 } 
-
 #photo img{
   width: 100%;
   height: 100%;
 }
-
-#text-header h1{
-  margin: 0;
-  margin-left: 15px; 
-  padding: 0;
-  font-size: 2.4em;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-
-#text-header h2{
-  margin: 0;
-  margin-left: 15px;
-  padding: 0;
-  font-size: 2.0em;
-  font-weight: 620;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-
-#text-header h1::first-line{
-  font-size: 1.5em;
-  letter-spacing: -4px;
-  font-weight: 800;
-  line-height: 1.5em;
-}
-
-#text-header h2::first-line{
-  font-size: 1.5em;
-  letter-spacing: -4px;
-  font-weight: 800;
-  line-height: 1.5em;
-}
-
-#text-header h1 span{
-  color: #327fc7;
-}
-
-#text-header h1 sup{
-  opacity: 0.5;
-}
-
-#text-header h2 sup{
-  opacity: 0.3;
-}
-
-#text-line{
-  width: 100%;
-  height: 3px;
-  background: url(../images/line.png);
-  margin-top: 10px;
-  content: '';
-  display: block;
-}
-
-.text-header-margin{
-  margin-left: 25px;
-}
-
-/*******************************************
-DEFAULT BOX
-*******************************************/
-.box{
-  margin-bottom: 15px;
-}
-
-.box h2{
-  color: #327fc7;
-  font-size: 1.8em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.box h2:before{
-  margin-right: 5px;
-}
-
-.box p{
-  font-size: 1.3em;
-  line-height: 1.5em;
-}
-
-/*******************************************
-EDUCATION
-*******************************************/
-#education{
-  margin-top: 20px;
+/* General section - since 28/05/2017 */
+.wrapper {
+  background: #4B6A78;
+  max-width: 960px;
+  margin: 0 auto;
   position: relative;
-  padding: 1em 0;
-  list-style: none;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-#education:before {
-  width: 5px;
-  height: 100%;
+.sidebar-wrapper {
+  background: #4B6A78;
   position: absolute;
-  left: 38px;
-  top: 0;
-  content: ' ';
-  display: block;
-  background: #327fc7;
-  background: -moz-linear-gradient(top,  #ffffff 0%, #327fc7 7%, #327fc7 89%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#327fc7), color-stop(89%,#327fc7), color-stop(100%,#ffffff));
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#327fc7 7%,#327fc7 89%,#ffffff 100%);
-  background: -o-linear-gradient(top,  #ffffff 0%,#327fc7 7%,#327fc7 89%,#ffffff 100%);
-  background: -ms-linear-gradient(top,  #ffffff 0%,#327fc7 7%,#327fc7 89%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #ffffff 0%,#327fc7 7%,#327fc7 89%,#ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
-}
-
-#education li{
-  width: 100%;
-  z-index: 2;
-  position: relative;
-  float: left;
-}
-
-#education .year{
-  width: 15%;
-  background: #fff;
-  padding: 0px;
-  margin-top: 10px;
-  font-size: 1.5em;
-  font-weight: 700;
-  display: inline-block;
-}
-
-#education .description{
-  width: 80%;
-  display: inline-block;
-  background: #eee;
-  margin-bottom: 10px;
-  position: relative;
-  padding: 10px 10px 0 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-#education .description:after {
-  content: '';
-  position: absolute;
-  top: 15px;
   right: 0;
-  left: -16px;
-  height: 0;
-  width: 0;
-  border: solid transparent;
-  border-right-color: #eee;
-  border-width: 8px;
-  pointer-events: none;
+  width: 240px;
+  height: 100%;
+  min-height: 800px;
+  color: #fff;
 }
-
-#education .description h3{
-  font-size: 1.6em;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
+.sidebar-wrapper a {
+  color: #fff;
 }
-
-#education .description p{
-  font-size: 1.3em;
-  margin-top: 5px;
-  padding: 0;
+.sidebar-wrapper .profile-container {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
 }
-
-/*******************************************
-EXPERIENCES
-*******************************************/
-.job{
+.sidebar-wrapper .name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sidebar-wrapper .profile {
   margin-bottom: 15px;
 }
-
-.job .where{
-  font-size: 1.4em;
-  font-weight: bold;
+.sidebar-wrapper .contact-list .fa {
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
 }
-
-.job .year{
-  font-size: 1.3em;
-  opacity: 0.7;
+.sidebar-wrapper .contact-list li {
+  margin-bottom: 15px;
 }
-
-.job .profession{
-  font-size: 1.6em;
-  font-weight: bold;
+.sidebar-wrapper .contact-list li:last-child {
+  margin-bottom: 0;
 }
-
-.job .description{
-  font-size: 1.2em;
-  line-height: 1.5em;
+.sidebar-wrapper .contact-list .email .fa {
+  font-size: 14px;
 }
-
-/*******************************************
-CONTACT
-*******************************************/
-.contact-item{
-  width: 100%;
-  float: left;
+.sidebar-wrapper .container-block {
+  padding: 30px;
 }
-
-.contact-item .icon{
-  padding: 10px;
-  border-right: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  opacity: 0.2;
-}
-
-.contact-item:last-child .icon{
-  border-bottom: none;
-}
-
-.contact-item .fa{
-  font-size: 2em;
-}
-
-.contact-item .title{
-  width: 80%;
-  width: calc(100% - 55px);
-  font-size: 1.5em;
+.sidebar-wrapper .container-block-title {
+  text-transform: uppercase;
+  font-size: 16px;
   font-weight: 700;
-  opacity: 0.9;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
-
-.contact-item .title.only{
-  margin-top: 10px;
+.sidebar-wrapper .degree {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
-
-.contact-item .description{
-  width: 80%;
-  width: calc(100% - 55px);
-  font-size: 1.2em;
-  opacity: 0.7;
+.sidebar-wrapper .education-container .item {
+  margin-bottom: 15px;
 }
-
-/*******************************************
-SKILLS
-*******************************************/
+.sidebar-wrapper .education-container .item:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .education-container .meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+.sidebar-wrapper .education-container .time {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.sidebar-wrapper .languages-container .lang-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+.sidebar-wrapper .languages-list {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .languages-list li {
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .languages-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .interests-list {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .interests-list li {
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .interests-list li:last-child {
+  margin-bottom: 0;
+}
+.main-wrapper {
+  background: #fff;
+  padding: 60px;
+  padding-right: 300px;
+}
+.main-wrapper .section-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e4049;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.main-wrapper .section-title .fa {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  display: inline-block;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #2e4049;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+.main-wrapper .section {
+  margin-bottom: 60px;
+}
+.main-wrapper .experiences-section .item {
+  margin-bottom: 30px;
+}
+.main-wrapper .upper-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.main-wrapper .job-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.main-wrapper .time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #97AAC3;
+}
+.main-wrapper .company {
+  margin-bottom: 10px;
+  color: #97AAC3;
+}
+.main-wrapper .project-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.main-wrapper .projects-section .intro {
+  margin-bottom: 30px;
+}
+.main-wrapper .projects-section .item {
+  margin-bottom: 15px;
+}
+/* Papers section - since 28/05/2017 */
+.main-wrapper .paper-title {
+  color: #3F4650;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.main-wrapper .papers-section .intro {
+  margin-bottom: 30px;
+}
+.main-wrapper .papers-section .item {
+  margin-bottom: 15px;
+}
+/* Papers section - since 28/05/2017 */
+.skillset .item {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.skillset .level-title {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.skillset .level-bar {
+  height: 12px;
+  background: #f5f5f5;
+}
+.skillset .level-bar-inner {
+  height: 12px;
+  background: #6c92a3;
+}
+/* Skills section - since 28/05/2017 */
 .item-skills{
   height: 30px;
-  background: #327fc7;
+  background: #4B6A78;
   color: #fff;
   padding: 5px 10px;
   margin-bottom: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 600;
 }
-
 .skills-legend{
   margin-top: 20px;
   opacity: 0.8;
 }
-
 .skills-legend:before{
   width: 100%;
   height: 3px;
@@ -327,7 +308,6 @@ SKILLS
   margin-bottom: -13px;
   background: #c6c6c6;
 }
-
 .skills-legend div{
   width: 25%;
   display: inline-block;
@@ -335,7 +315,6 @@ SKILLS
   color: #a9a9a9;
   float: left;
 }
-
 .legend:before{
   width: 3px;
   height: 10px;
@@ -346,435 +325,68 @@ SKILLS
   margin-bottom: 15px;
   background: #c6c6c6;
 }
-
 .legend-left.legend:before{
   margin-left: 0;
 }
-
 .legend-right.legend:before{
   margin-right: 0;
 }
-
 .legend-left:nth-child(2) span{
   margin-left: -25px;
 }
-
 .legend-right:nth-child(3) span{
   margin-right: -20px;
 }
-
 .legend-right{
   text-align: right;
 }
-
-/*******************************************
-PAPER
-*******************************************/
-.paper-item{
-  width: 100%;
-  float: left;
+/* Skills section - since 28/05/2017 */
+.footer {
+  padding: 30px;
+  padding-top: 60px;
 }
-
-.paper-item .icon{
-  padding: 10px;
-  border-right: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  opacity: 0.2;
+.footer .copyright {
+  line-height: 1.6;
+  color: #545E6C;
+  font-size: 13px;
 }
-
-.paper-item:last-child .icon{
-  border-bottom: none;
+.footer .fa-heart {
+  color: #fb866a;
 }
-
-.paper-item .fa{
-  font-size: 2em;
-}
-
-.paper-item .title{
-  width: 80%;
-  width: calc(100% - 55px);
-  font-size: 1.5em;
-  font-weight: 700;
-  opacity: 0.9;
-}
-
-.paper-item .title.only{
-  margin-top: 10px;
-}
-
-.paper-item .description{
-  width: 80%;
-  width: calc(100% - 55px);
-  font-size: 1.2em;
-  opacity: 0.7;
-}
-
-
-/*******************************************
-MEDIA
-*******************************************/
-@media (min-width: 275px) {
-  #education .description{
-    width: 80%;
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .sidebar-wrapper {
+    position: static;
+    width: inherit;
   }
-
-  #education .year{
-    width: 20%;
+  .main-wrapper {
+    padding: 30px;
   }
-
-  #photo{
-    width: 120px;
-    height: 170px; 
-    margin-top: 15px;
-    margin-left: -15px; 
-    display: inline-block;
-    overflow: hidden;
-  } 
-
-  #photo img{
-    width: 80%;
-    height: 80%;
+  .main-wrapper .time {
+    position: static;
+    display: block;
+    margin-top: 5px;
   }
-
-  #text-header h1{
-    margin: 0;
-    padding: 0;
-    margin-left: -27px; 
-    font-size: 1.6em;
-    font-weight: 620;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  #text-header h2{
-    margin: 0;
-    padding: 0;
-    margin-left: -27px; 
-    font-size: 1.2em;
-    font-weight: 540;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  .text-header-margin{
-    margin: 0;
-  }
-
-}
-
-@media (min-width: 360px) {
-  #education .description{
-    width: 80%;
-  }
-
-  #education .year{
-    width: 20%;
-  }
-
-  #photo{
-    width: 120px;
-    height: 170px; 
-    margin-top: 15px;
-    margin-left: -15px; 
-    display: inline-block;
-    overflow: hidden;
-  } 
-
-  #photo img{
-    width: 80%;
-    height: 80%;
-  }
-
-  #text-header h1{
-    margin: 0;
-    padding: 0;
-    margin-left: -27px; 
-    font-size: 2.0em;
-    font-weight: 680;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  #text-header h2{
-    margin: 0;
-    padding: 0;
-    margin-left: -27px; 
-    font-size: 1.6em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  .text-header-margin{
-    margin: 0;
-  }
-
-}
-
-@media (min-width: 438px) {
-  #education .description{
-    width: 80%;
-  }
-
-  #education .year{
-    width: 20%;
-  }
-
-  #photo{
-    width: 120px;
-    height: 170px; 
-    margin-top: 15px;
-    margin-left: -15px; 
-    display: inline-block;
-    overflow: hidden;
-  } 
-
-  #photo img{
-    width: 80%;
-    height: 80%;
-  }
-
-  #text-header h1{
-    margin: 0;
-    margin-left: 35px; 
-    padding: 0;
-    font-size: 2.0em;
-    font-weight: 680;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  #text-header h2{
-    margin: 0;
-    margin-left: 35px;
-    padding: 0;
-    font-size: 1.6em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-}
-
-@media (min-width: 480px) {
-  #education .description{
-    width: 80%;
-  }
-
-  #education .year{
-    width: 20%;
-  }
-
-  #photo{
-    width: 120px;
-    height: 170px; 
-    margin-top: 15px;
-    margin-left: -15px; 
-    display: inline-block;
-    overflow: hidden;
-  } 
-
-  #photo img{
-    width: 80%;
-    height: 80%;
-  }
-
-  #text-header h1{
-    margin: 0;
-    margin-left: 35px; 
-    padding: 0;
-    font-size: 2.0em;
-    font-weight: 680;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  #text-header h2{
-    margin: 0;
-    margin-left: 35px;
-    padding: 0;
-    font-size: 1.6em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-}
-
-@media (min-width: 600px) {
-  #education .description{
-    width: 80%;
-  }
-
-  #education .year{
-    width: 20%;
-  }
-
-  #photo{
-    width: 120px;
-    height: 170px; 
-    margin-top: 15px;
-    margin-left: -15px; 
-    display: inline-block;
-    overflow: hidden;
-  } 
-
-  #photo img{
-    width: 80%;
-    height: 80%;
-  }
-
-  #text-header h1{
-    margin: 0;
-    margin-left: 22px; 
-    padding: 0;
-    font-size: 2.2em;
-    font-weight: 680;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  #text-header h2{
-    margin: 0;
-    margin-left: 22px;
-    padding: 0;
-    font-size: 1.8em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-}
-
-@media (min-width: 768px) {
-  #education .description{
-    width: 76%;
-  }
-
-  #education .year{
-    width: 22%;
-  }
-
-  #photo{
-    width: 120px;
-    height: 170px; 
-    margin-top: 15px;
-    margin-left: -15px; 
-    display: inline-block;
-    overflow: hidden;
-  } 
-
-  #photo img{
-    width: 80%;
-    height: 80%;
-  }
-
-  #text-header h1{
-    margin: 0;
-    margin-left: 15px; 
-    padding: 0;
-    font-size: 2.4em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  #text-header h2{
-    margin: 0;
-    margin-left: 15px;
-    padding: 0;
-    font-size: 2.0em;
-    font-weight: 620;
-    text-transform: uppercase;
-    letter-spacing: -1px;
+  .main-wrapper .upper-row {
+    margin-bottom: 0;
   }
 }
-
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #education .description{
-    width: 82%;
-  }
-
-  #education .year{
-    width: 18%;
-  }
-
-  #photo{
-    width: 122px;
-    height: 172px; 
-    margin-top: 15px;
-    margin-left: -15px; 
+  .skillset .level-title {
     display: inline-block;
-    overflow: hidden;
-  } 
-
-  #photo img{
-    width: 92%;
-    height: 92%;
+    float: left;
+    width: 30%;
+    margin-bottom: 0;
   }
-
-  #text-header h1{
-    margin: 0;
-    margin-left: 15px; 
-    padding: 0;
-    font-size: 2.4em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  #text-header h2{
-    margin: 0;
-    margin-left: 15px;
-    padding: 0;
-    font-size: 2.0em;
-    font-weight: 620;
-    text-transform: uppercase;
-    letter-spacing: -1px;
+  .skillset .level-bar {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    position: relative;
+    top: 1px;
   }
 }
-
-@media (min-width: 1200px) {
-  #education .description{
-    width: 85%;
-  }
-
-  #education .year{
-    width: 15%;
-  }
-
-  #photo{
-    width: 125px;
-    height: 175px; 
-    margin-top: 15px;
-    margin-left: -15px; 
-    display: inline-block;
-    overflow: hidden;
-  } 
-
-  #photo img{
-    width: 95%;
-    height: 95%;
-  }
-
-  #text-header h1{
-    margin: 0;
-    margin-left: 15px; 
-    padding: 0;
-    font-size: 2.4em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-
-  #text-header h2{
-    margin: 0;
-    margin-left: 15px;
-    padding: 0;
-    font-size: 2.0em;
-    font-weight: 620;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-  }
-}
-
+/* Large devices (large desktops, 1200px and up) */
+/* Ex-Large devices (large desktops, 1200px and up) */

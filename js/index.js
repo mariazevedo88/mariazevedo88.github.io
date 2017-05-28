@@ -35,14 +35,24 @@ Since: 06/08/2016
   		},
   		{'name': 'Um Modelo Conceitual para Caracterização da Qualidade Interna de Sistemas de Software Open-Source Orientados a Objeto',
   		 'year': '2014',
-  		 'size': '6,03 MB',
+  		 'size': '6.03 MB',
   		 'link': 'http://www.ic.ufal.br/evento/cbsoft2014/anais/wtdsoft_v1_p.pdf'
   		},
-  		{'name': 'Similar Characteristics in Internal Software Attributes for  Object-Oriented Open-Source Software Projects',
+  		{'name': 'Similar Characteristics in Internal Software Attributes for Object-Oriented Open-Source Software Projects',
   		 'year': '2014',
   		 'size': '1 MB',
   		 'link': 'http://migre.me/u986v'
-  		}];
+  		},
+      {'name': 'Metrics and statistical techniques used to evaluate internal quality of object-oriented software: A systematic mapping',
+       'year': '2016',
+       'size': '229,3 KB',
+       'link': 'http://ieeexplore.ieee.org/document/7836021/' 
+      },
+      {'name': 'Characterization of the modularisation of open-source systems — A case study in domain of games',
+       'year': '2016',
+       'size': '1.8 MB',
+       'link': 'http://ieeexplore.ieee.org/document/7836056/' 
+      }];
 
 	  	$scope.init = function(){
 	  		$scope.callback();
@@ -82,11 +92,12 @@ Since: 06/08/2016
 
 		$scope.sendMail = function(){
     		$window.location.href = "mailto:mariana@bsi.ufla.br";
-    	};
+    };
 
-    	$scope.downloadPaper = function(link){
+    $scope.downloadPaper = function(link){
     		$window.location.href = link;
-    	}
-   });
+    };
+
+  });
   
 })();
