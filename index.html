@@ -7,8 +7,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Mariana Azevedo Resume/CV Page">
-      <meta name="author" content="Mariana Azevedo Resume/CV Page">
-	  <link rel="shortcut icon" href="images/favicon.ico">  	  
+      <meta name="author" content="Mariana Azevedo Resume/CV Page"> 	  
       <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
       <!-- Global CSS -->
       <link rel="stylesheet" href="css/bootstrap.min.css">   
@@ -42,9 +41,9 @@
             
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa fa-envelope"></i><a ng-click="sendMail()">mariana@bsi.ufla.br</a></li>
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a ng-click="goToLinkedIn()" target="_blank">linkedin.com/in/mariana-azevedo-santos</a></li>
-                    <li class="github"><i class="fa fa-github"></i><a ng-click="goToGithub()" target="_blank">mariazevedo88</a></li>
+                    <li class="email cursor-pointer"><i class="fa fa-envelope"></i><a ng-click="sendMail()">mariana@bsi.ufla.br</a></li>
+                    <li class="linkedin cursor-pointer"><i class="fa fa-linkedin"></i><a ng-click="goToLinkedIn()" target="_blank">linkedin.com/in/mariana-azevedo-santos</a></li>
+                    <li class="github cursor-pointer"><i class="fa fa-github"></i><a ng-click="goToGithub()" target="_blank">mariazevedo88</a></li>
                 </ul>
             </div><!--//contact-container-->
             <div class="education-container container-block">
@@ -73,7 +72,11 @@
             <div class="interests-container container-block">
                 <h2 class="container-block-title">Interests</h2>
                 <ul class="list-unstyled interests-list">
-                    <li>Software Engineering</li>
+                    <li>Software engineering</li>
+                    <li>Software quality</li>
+                    <li>Code quality</li>
+                    <li>Clean code</li>
+                    <li>Java development</li>
                     <li>Mobile development</li>
                 </ul>
             </div><!--//interests-->
@@ -153,7 +156,17 @@
                 </div><!--//item-->
             </section><!--//section-->
 
-             <section class="section papers-section">
+            <section class="section papers-section">
+                <h2 class="section-title"><i class="fa fa-pencil"></i>Articles wrote</h2>
+                <div class="intro">
+                    <p>Articles that I wrote</p>
+                </div><!--//intro-->
+                <div class="item" ng-repeat="article in articlesPublished">
+                     <span class="paper-title" ng-bind-template="[{{article.year}}] {{article.name}}"></span> - <span class="project-tagline" ng-click="downloadPaper(article.link)"><a class="cursor-pointer company">Link</a></span>
+                </div><!--//item-->
+            </section><!--//section-->
+
+            <section class="section papers-section">
                 <h2 class="section-title"><i class="fa fa-download"></i>Papers published</h2>
                 <div class="intro">
                     <p>Scientific papers that I wrote</p>
@@ -170,12 +183,13 @@
                   <div class="item-skills" data-percent="1.00">Scrum</div>
                   <div class="item-skills" data-percent="0.90">JavaScript</div>
                   <div class="item-skills" data-percent="0.90">AngularJS</div>
-                  <div class="item-skills" data-percent="0.70">Git</div>
-                  <div class="item-skills" data-percent="0.70">MySQL</div>
-                  <div class="item-skills" data-percent="0.70">PostgreSQL</div>
+                  <div class="item-skills" data-percent="0.80">Git</div>
+                  <div class="item-skills" data-percent="0.80">MySQL</div>
+                  <div class="item-skills" data-percent="0.80">PostgreSQL</div>
                   <div class="item-skills" data-percent="0.70">HTML/CSS</div>
-                  <div class="item-skills" data-percent="0.50">Oracle</div>
-                  <div class="item-skills" data-percent="0.50">MyBatis</div>
+                  <div class="item-skills" data-percent="0.70">Oracle</div>
+                  <div class="item-skills" data-percent="0.70">MyBatis</div>
+                  <div class="item-skills" data-percent="0.50">Spring Framework</div>
                   <div class="item-skills" data-percent="0.30">PHP</div>
                   <div class="item-skills" data-percent="0.30">Wordpress</div>
                   <div class="skills-legend clearfix">
