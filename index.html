@@ -65,7 +65,7 @@
                 <h2 class="container-block-title">Languages</h2>
                 <ul class="list-unstyled interests-list">
                     <li>Portuguese <span class="lang-desc">(Native)</span></li>
-                    <li>English <span class="lang-desc">(Professional)</span></li>
+                    <li>English <span class="lang-desc">(Advanced)</span></li>
                 </ul>
             </div><!--//interests-->
             
@@ -88,7 +88,7 @@
             <section class="section summary-section">
                 <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
                 <div class="summary">
-                    <p>Developer/System analyst with more than 6 years of experience in software development. I am very interest in empirical software engineering, code quality assessment, agile development, human-computer interation, and mobile development.</p>
+                    <p>Developer/System analyst with more than 7 years of experience in software development. I am very interest in empirical software engineering, code quality assessment, agile development, and mobile development.</p>
                 </div><!--//summary-->
             </section><!--//section-->
             
@@ -104,7 +104,7 @@
                         <div class="company">Equals S/A</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>Working in a financial system developed with Java.</p>  
+                        <p>Working in a financial system developed with Java EE.</p>  
                     </div><!--//details-->
                 </div><!--//item-->
                 
@@ -117,7 +117,7 @@
                         <div class="company">Mitah Technologies Ltda</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>Worked as front-end developer/team leader for almost 3 years (with JavaScript/AngularJS/Bootstrap). Also, worked as back-end developer (Java) and mobile developer (Android) for 3 years.</p>  
+                        <p>Worked as front-end developer/team leader for almost 3 years (with JavaScript/AngularJS/Bootstrap). Also, worked as back-end developer (Java EE and Groovy/Grails) and mobile developer (Android) for another 3 years.</p>  
                     </div><!--//details-->
                 </div><!--//item-->
                 
@@ -162,7 +162,9 @@
                     <p>Articles that I wrote</p>
                 </div><!--//intro-->
                 <div class="item" ng-repeat="article in articlesPublished">
-                     <span class="paper-title" ng-bind-template="[{{article.year}}] {{article.name}}"></span> - <span class="project-tagline" ng-click="downloadPaper(article.link)"><a class="cursor-pointer company">Link</a></span>
+                     <span class="paper-title" ng-bind-template="[{{article.year}}] {{article.name}}"></span>
+                     <div class="company">Language: <span class="project-tagline" ng-bind-template="{{article.language}}"></span></div>
+                     <div class="company"><span class="project-tagline" ng-click="downloadPaper(article.link)"><a class="cursor-pointer company">Link to the article</a></span></div>
                 </div><!--//item-->
             </section><!--//section-->
 
@@ -181,15 +183,22 @@
                 <div class="skills">
                   <div class="item-skills" data-percent="1.00">Java</div>
                   <div class="item-skills" data-percent="1.00">Scrum</div>
+                  <div class="item-skills" data-percent="1.00">Research</div>
+                  <div class="item-skills" data-percent="1.00">Software development</div>
+                  <div class="item-skills" data-percent="1.00">Software engineering</div>
+                  <div class="item-skills" data-percent="0.90">Spring Framework</div>
                   <div class="item-skills" data-percent="0.90">JavaScript</div>
                   <div class="item-skills" data-percent="0.90">AngularJS</div>
-                  <div class="item-skills" data-percent="0.80">Git</div>
-                  <div class="item-skills" data-percent="0.80">MySQL</div>
-                  <div class="item-skills" data-percent="0.80">PostgreSQL</div>
+                  <div class="item-skills" data-percent="0.90">Git</div>
+                  <div class="item-skills" data-percent="0.90">MySQL</div>
+                  <div class="item-skills" data-percent="0.85">PostgreSQL</div>
+                  <div class="item-skills" data-percent="0.85">Oracle</div>
+                  <div class="item-skills" data-percent="0.80">Groovy/Grails</div>
+                  <div class="item-skills" data-percent="0.80">Android development</div>
                   <div class="item-skills" data-percent="0.70">HTML/CSS</div>
-                  <div class="item-skills" data-percent="0.70">Oracle</div>
+                  <div class="item-skills" data-percent="0.70">Bootstrap</div>
                   <div class="item-skills" data-percent="0.70">MyBatis</div>
-                  <div class="item-skills" data-percent="0.50">Spring Framework</div>
+                  <div class="item-skills" data-percent="0.65">Linux</div>
                   <div class="item-skills" data-percent="0.30">PHP</div>
                   <div class="item-skills" data-percent="0.30">Wordpress</div>
                   <div class="skills-legend clearfix">

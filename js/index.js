@@ -9,12 +9,19 @@ Since: 06/08/2016
   app.controller('PageCtrl', function ($scope, $window) {
 
 		$scope.articlesPublished = [
+			{'name': 'Princípios S.O.L.I.D: o que são e porque projetos devem utilizá-los',
+			'year': '2018',
+			'language': 'Portuguese',
+			'link': 'https://bit.ly/2o97vY1' 
+			},
 			{'name': 'Existe avaliação e garantia de qualidade no seu código durante o desenvolvimento e depois do deploy?',
 			'year': '2018',
+			'language': 'Portuguese',
 			'link': 'https://goo.gl/P1JKtf' 
 			},
 			{'name': 'Tem um tempinho para conversarmos sobre boas práticas de programação com Java?',
 			'year': '2018',
+			'language': 'Portuguese',
 			'link': 'https://goo.gl/bWf5Bb' 
 			}
 		];
