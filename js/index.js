@@ -9,6 +9,16 @@ Since: 06/08/2016
   app.controller('PageCtrl', function ($scope, $window) {
 
 		$scope.articlesPublished = [
+			{'name': 'Qualidade e JUnit: introduzindo automatização de testes unitários do seu software Java no dia-a-dia',
+			'year': '2018',
+			'language': 'Portuguese',
+			'link': 'https://bit.ly/2Oosil4' 
+			},
+			{'name': 'Do you have time to talk about best coding practices with Java?',
+			'year': '2018',
+			'language': 'English',
+			'link': 'https://bit.ly/2Rzp0xo' 
+			},
 			{'name': 'Princípios S.O.L.I.D: o que são e porque projetos devem utilizá-los',
 			'year': '2018',
 			'language': 'Portuguese',
@@ -17,12 +27,12 @@ Since: 06/08/2016
 			{'name': 'Existe avaliação e garantia de qualidade no seu código durante o desenvolvimento e depois do deploy?',
 			'year': '2018',
 			'language': 'Portuguese',
-			'link': 'https://goo.gl/P1JKtf' 
+			'link': 'https://bit.ly/2BLwPgi' 
 			},
 			{'name': 'Tem um tempinho para conversarmos sobre boas práticas de programação com Java?',
 			'year': '2018',
 			'language': 'Portuguese',
-			'link': 'https://goo.gl/bWf5Bb' 
+			'link': 'https://bit.ly/2zsSWn8' 
 			}
 		];
 
