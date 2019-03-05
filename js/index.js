@@ -9,6 +9,16 @@ Since: 06/08/2016
   app.controller('PageCtrl', function ($scope, $window) {
 
 		$scope.articlesPublished = [
+			{'name': 'Utilizando Travis CI como servidor de integração contínua em projetos open-source: um exemplo com a linguagem Java',
+			'year': '2018',
+			'language': 'Portuguese',
+			'link': 'https://bit.ly/2QVowWw'
+			},
+			{'name': 'O que vi no DevFest BH 2018',
+			'year': '2018',
+			'language': 'Portuguese',
+			'link': 'https://bit.ly/2ECBEqn'
+			},
 			{'name': 'Qualidade e JUnit: introduzindo automatização de testes unitários do seu software Java no dia-a-dia',
 			'year': '2018',
 			'language': 'Portuguese',
@@ -36,7 +46,7 @@ Since: 06/08/2016
 			}
 		];
 
-  		$scope.papersPublished = [
+  	$scope.papersPublished = [
 			{'name': 'Characterization of the modularisation of open-source systems — A case study in domain of games',
 			'year': '2016',
 			'size': '1.8 MB',
@@ -84,11 +94,11 @@ Since: 06/08/2016
 			}
 		];
 
-	  	$scope.init = function(){
-	  		$scope.callback();
-	  	};
+	  $scope.init = function(){
+	  	$scope.callback();
+	  };
 	      
-	    $scope.callback = function(){
+	  $scope.callback = function(){
 			$('.item-skills').each(function(){
 				newWidth = $(this).parent().width() * $(this).data('percent');
 				$(this).width(0);
