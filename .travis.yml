@@ -7,3 +7,6 @@ sudo: required
 branches:
   only:
   - master
+
+script:
+- npm run test-headless
