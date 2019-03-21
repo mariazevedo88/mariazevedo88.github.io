@@ -9,6 +9,16 @@ Since: 06/08/2016
   app.controller('PageCtrl', function ($scope, $window) {
 
 		$scope.articlesPublished = [
+			{'name': 'S.O.L.I.D principles: what are they and why projects should use them',
+				'year': '2019',
+				'language': 'English',
+				'link': 'https://bit.ly/2OhRgEn'
+			},
+			{'name': 'Is there evaluation and quality assurance in your code during development and after the deploy?',
+				'year': '2019',
+				'language': 'English',
+				'link': 'https://bit.ly/2JjyMEu'
+			},
 			{'name': 'Utilizando Travis CI como servidor de integração contínua em projetos open-source: um exemplo com a linguagem Java',
 			'year': '2018',
 			'language': 'Portuguese',
@@ -132,7 +142,11 @@ Since: 06/08/2016
 
 		$scope.sendMail = function(){
     		$window.location.href = "mailto:mariana@bsi.ufla.br";
-    };
+		};
+		
+		$scope.goToSourcerer = function(){
+			$window.location.href = "https://sourcerer.io/mariazevedo88"
+		}
 
     $scope.downloadPaper = function(link){
     		$window.location.href = link;
