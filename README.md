@@ -4,3 +4,4 @@
 
 My personal website: https://mariazevedo88.github.io/
 
+![Imagem 1 da página](images/page01.png) ![Imagem 2 da página](images/page02.png)
