@@ -4,59 +4,80 @@ Since: 06/08/2016
 *******************************************/
 (function (){
 
-  var app = angular.module('app', []);
+  	var app = angular.module('app', []);
 
-  app.controller('PageCtrl', function ($scope, $window) {
+  	app.controller('PageCtrl', function ($scope, $window) {
 
 		$scope.articlesPublished = [
-			{'name': 'S.O.L.I.D principles: what are they and why projects should use them',
+			{
+				'name': 'Construindo uma API RESTful com Java e Spring Framework',
+				'year': '2019',
+				'language': 'Portuguese',
+				'link': 'https://bit.ly/2Nmb7mn'
+			},
+			{
+				'name': 'Como eu publico meu software open-source em um repositório Maven?',
+				'year': '2019',
+				'language': 'Portuguese',
+				'link': 'https://bit.ly/2NmaTvx'
+			},
+			{
+				'name': 'S.O.L.I.D principles: what are they and why projects should use them',
 				'year': '2019',
 				'language': 'English',
 				'link': 'https://bit.ly/2OhRgEn'
 			},
-			{'name': 'Is there evaluation and quality assurance in your code during development and after the deploy?',
+			{
+				'name': 'Is there evaluation and quality assurance in your code during development and after the deploy?',
 				'year': '2019',
 				'language': 'English',
 				'link': 'https://bit.ly/2JjyMEu'
 			},
-			{'name': 'Utilizando Travis CI como servidor de integração contínua em projetos open-source: um exemplo com a linguagem Java',
-			'year': '2018',
-			'language': 'Portuguese',
-			'link': 'https://bit.ly/2QVowWw'
+			{
+				'name': 'Utilizando Travis CI como servidor de integração contínua em projetos open-source: um exemplo com a linguagem Java',
+				'year': '2018',
+				'language': 'Portuguese',
+				'link': 'https://bit.ly/2QVowWw'
 			},
-			{'name': 'O que vi no DevFest BH 2018',
-			'year': '2018',
-			'language': 'Portuguese',
-			'link': 'https://bit.ly/2ECBEqn'
+			{
+				'name': 'O que vi no DevFest BH 2018',
+				'year': '2018',
+				'language': 'Portuguese',
+				'link': 'https://bit.ly/2ECBEqn'
 			},
-			{'name': 'Qualidade e JUnit: introduzindo automatização de testes unitários do seu software Java no dia-a-dia',
-			'year': '2018',
-			'language': 'Portuguese',
-			'link': 'https://bit.ly/2Oosil4' 
+			{
+				'name': 'Qualidade e JUnit: introduzindo automatização de testes unitários do seu software Java no dia-a-dia',
+				'year': '2018',
+				'language': 'Portuguese',
+				'link': 'https://bit.ly/2Oosil4' 
 			},
-			{'name': 'Do you have time to talk about best coding practices with Java?',
-			'year': '2018',
-			'language': 'English',
-			'link': 'https://bit.ly/2Rzp0xo' 
+			{
+				'name': 'Do you have time to talk about best coding practices with Java?',
+				'year': '2018',
+				'language': 'English',
+				'link': 'https://bit.ly/2Rzp0xo' 
 			},
-			{'name': 'Princípios S.O.L.I.D: o que são e porque projetos devem utilizá-los',
-			'year': '2018',
-			'language': 'Portuguese',
-			'link': 'https://bit.ly/2o97vY1' 
+			{
+				'name': 'Princípios S.O.L.I.D: o que são e porque projetos devem utilizá-los',
+				'year': '2018',
+				'language': 'Portuguese',
+				'link': 'https://bit.ly/2o97vY1' 
 			},
-			{'name': 'Existe avaliação e garantia de qualidade no seu código durante o desenvolvimento e depois do deploy?',
-			'year': '2018',
-			'language': 'Portuguese',
-			'link': 'https://bit.ly/2BLwPgi' 
+			{
+				'name': 'Existe avaliação e garantia de qualidade no seu código durante o desenvolvimento e depois do deploy?',
+				'year': '2018',
+				'language': 'Portuguese',
+				'link': 'https://bit.ly/2BLwPgi' 
 			},
-			{'name': 'Tem um tempinho para conversarmos sobre boas práticas de programação com Java?',
-			'year': '2018',
-			'language': 'Portuguese',
-			'link': 'https://bit.ly/2zsSWn8' 
+			{
+				'name': 'Tem um tempinho para conversarmos sobre boas práticas de programação com Java?',
+				'year': '2018',
+				'language': 'Portuguese',
+				'link': 'https://bit.ly/2zsSWn8' 
 			}
 		];
 
-  	$scope.papersPublished = [
+  		$scope.papersPublished = [
 			{'name': 'Characterization of the modularisation of open-source systems — A case study in domain of games',
 			'year': '2016',
 			'size': '1.8 MB',
@@ -104,11 +125,11 @@ Since: 06/08/2016
 			}
 		];
 
-	  $scope.init = function(){
-	  	$scope.callback();
-	  };
+	  	$scope.init = function(){
+	  		$scope.callback();
+	  	};
 	      
-	  $scope.callback = function(){
+	  	$scope.callback = function(){
 			$('.item-skills').each(function(){
 				newWidth = $(this).parent().width() * $(this).data('percent');
 				$(this).width(0);
@@ -148,10 +169,9 @@ Since: 06/08/2016
 			$window.location.href = "https://sourcerer.io/mariazevedo88"
 		}
 
-    $scope.downloadPaper = function(link){
+    	$scope.downloadPaper = function(link){
     		$window.location.href = link;
-    };
+    	};
 
-  });
-  
+  	});
 })();
